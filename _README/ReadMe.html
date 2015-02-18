@@ -63,9 +63,11 @@
 	</ul>
   <li>If you or another addon have made any changes to the file below, you will need to use a file merging software like WinMerge or BeyondCompare to merge the file changes together.</li>
 	<ul>
-		<li>Optional Installation File/includes/templates/YOUR_TEMPLATE/tpl_product_info_display.php</li>
-		<li>This file was changed in Zen Cart 1.5.3. If you're using Zen Cart 1.5.3+, use the file in:<br />
-		2_Optional_File\zen153\includes\templates\YOUR-TEMPLATE\templates</li>
+		<li>Optional Installation File 2_Optional_File/zen139/includes/templates/YOUR_TEMPLATE/tpl_product_info_display.php</li>
+			<ul>
+				<li>This file was changed in Zen Cart 1.5.3. If you're using Zen Cart 1.5.3+, use the file:<br />
+					2_Optional_File/zen153/includes/templates/YOUR-TEMPLATE/templates/tpl_product_info_display.php</li>
+		</ul>
 		<li>The changes to this file is easy to locate because it is clearly commented as follows:</li>
 			<ul>
 				<li>< !-- bof recent products module -- ></li>
@@ -73,7 +75,7 @@
 			</ul>
 	</ul>
   <li>Once your file merges (if any) are complete, use your favorite FTP program to upload the CONTENTS of the Required_Installation_Files folder (not the folder itself)</li>
-  <li>If you want to add the option of having recently viewed items displayed in a centerbox, instead of or in addition to having them displayed in the sidebox, then upload the CONTENTS of the Optional_Installation_Files folder (not the folder itself)</li>
+  <li>If you want to add the option of having recently viewed items displayed in a centerbox, instead of or in addition to having them displayed in the sidebox, then upload the CONTENTS of the Optional_Installation_Files folder (not the folder itself). See #3 above for the correct version of this file.</li>
   <li>Install the SQL file, located in SQL/install.sql</li>
 	<ul>
 		<li>Using Notepad or some other text editor, open the install.sql file & copy the contents</li>
