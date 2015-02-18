@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  <meta name="ROBOTS" content="nofollow,noindex">  
+  <meta name="ROBOTS" content="noarchive">  
+  <meta http-equiv="pragma" content="no-cache">  
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">  
+  <meta http-equiv="content-language" content="en">  
+  <meta name="author" content="C Jones Over the Hill Web Consulting (http://overthehillweb.com)">  
+  <meta name="keywords" content="button, buttons, generator, construction, kit, Zen Cart, multi-language, icons, online-shop">  
+  <meta name="description" content="To allow admin to declare categories (and all products within) as hidden, to one degree or another. This was designed for a very specific purpose, so its usefulness in your situation is up to you to determine.">
+	<title>Recently Viewed Items 2.3</title>
+    
+  <link rel="stylesheet" type="text/css" href="includes/css/stylesheet.css">  
+  <script type="text/javascript" src="includes/jscript/jscript_tabs.js"></script></head><body>
+<div id="wrapper">
+	<h2>Recently Viewed Items 2.3</h2>
+<p>Download link: <a href="http://www.zen-cart.com/downloads.php?do=file&id=500" target="_blank">http://www.zen-cart.com/downloads.php?do=file&id=500</a></p>
+<div id="slidetabsmenu" style="display: none;">
+<ul>
+
+  <li> <a onClick="expandcontent('sc1', this)" href="javascript:void(0)"><span>Purpose &amp; Aim</span></a></li>
+  <li> <a onClick="expandcontent('sc2', this)" href="javascript:void(0)"><span>Installation</span></a></li>
+  <li> <a onClick="expandcontent('sc3', this)" href="javascript:void(0)"><span>Usage &amp; Configuration</span></a></li>
+  <li> <a onClick="expandcontent('sc4', this)" href="javascript:void(0)"><span>Files</span></a></li>
+  <li> <a onClick="expandcontent('sc5', this)" href="javascript:void(0)"><span>Credits &amp; History</span></a></li>
+  <li> <a onClick="expandcontent('sc6', this)" href="javascript:void(0)"><span>License</span></a></li></ul>
+</div>
+<br style="clear: both;">
+
+<!--Begin tabcontainer-->
+<div id="tabcontentcontainer">
+
+
+<!--Begin sc1-->
+<div class="tabcontent" id="sc1" style="display: block;">
+<div class="textcontent">
+<h3>PURPOSE &amp; AIM</h3>
+
+<p>A simple but effective sidebox module that displays recently viewed items. Also included is an optional installation file to display recently viewed items in a centerbox. Ultimately, you can choose to display your recently viewed items in a sidebox (default), a centerbox (optional), or both (optional).</p>
+
+</div>
+</div>
+<!--End sc1-->
+
+
+<!--Begin sc2-->
+<div class="tabcontent" id="sc2" style="display: block;">
+<div class="textcontent">
+<h3>INSTALLATION </h3>
+
+<p></p><strong>!!!!!BACKUP YOUR STORE BEFORE YOU BEGIN!!!!!</strong>
+
+<div class="regularlist">
+<p><strong>Installation</strong></p>
+<ol>
+  <li>Extract the contents of the zip file to a temp directory on your PC, leaving the folder and file structure intact</li>
+  <li>Rename all instances of YOUR_TEMPLATE to match the name of your template override folder</li>
+	<ul>
+		<li>Required Installation Files/includes/languages/english/extra_definitions_YOUR_TEMPLATE</li>
+		<li>Required Installation Files/includes/modules/sideboxes/YOUR_TEMPLATE</li>
+		<li>Required Installation Files/includes/templates/YOUR_TEMPLATE</li>
+		<li>Optional Installation File/includes/templates/YOUR_TEMPLATE</li>
+	</ul>
+  <li>If you or another addon have made any changes to the file below, you will need to use a file merging software like WinMerge or BeyondCompare to merge the file changes together.</li>
+	<ul>
+		<li>Optional Installation File/includes/templates/YOUR_TEMPLATE/tpl_product_info_display.php</li>
+		<li>This file was changed in Zen Cart 1.5.3. If you're using Zen Cart 1.5.3+, use the file in:<br />
+		2_Optional_File\zen153\includes\templates\YOUR-TEMPLATE\templates</li>
+		<li>The changes to this file is easy to locate because it is clearly commented as follows:</li>
+			<ul>
+				<li>< !-- bof recent products module -- ></li>
+				<li>< !-- eof recent products module -- ></li>
+			</ul>
+	</ul>
+  <li>Once your file merges (if any) are complete, use your favorite FTP program to upload the CONTENTS of the Required_Installation_Files folder (not the folder itself)</li>
+  <li>If you want to add the option of having recently viewed items displayed in a centerbox, instead of or in addition to having them displayed in the sidebox, then upload the CONTENTS of the Optional_Installation_Files folder (not the folder itself)</li>
+  <li>Install the SQL file, located in SQL/install.sql</li>
+	<ul>
+		<li>Using Notepad or some other text editor, open the install.sql file & copy the contents</li>
+		<li>Log in to your store's admin</li>
+		<li>Navigate to Admin > Tools > Install SQL Patches</li>
+		<li>Paste the contents of the file into the box & click "Send"</li>
+	</ul>
+</ol>
+
+</div>
+</div>
+</div>
+<!--End sc2-->
+
+
+<!--Begin sc3-->
+<div class="tabcontent" id="sc3" style="display: block;">
+<div class="textcontent">
+<h3>USAGE &amp; CONFIGURATION</h3><br>
+
+<p>To set the maximum number of items that can be shown in the sidebox, navigate to Admin > Configuration > Maximum Values > Maximum Display of Recently Viewed Products. The default value is 3, but you can change it to whatever you like. </p>
+	
+<p>Then navigate to Admin > Tools > Layout Boxes Controller, select the recently_viewed box, and turn the sidebox option to YES & select the sort order of your choice.</p>
+	
+<p>To set the maximum number of items that can be shown in the centerbox, navigate to Admin > Configuration > Maximum Values > Maximum Display of Recently Viewed Products on Product Page. The default value is 3, but you can change it to whatever you like.</p> 
+	
+<p>To set the maximum number of items that can be shown per row in the centerbox, navigate to Admin > Configuration > Maximum Values > Maxium Display of Recently Viewed Products per row. The default value is 3, but you can change it to whatever you like.</p>
+
+</div>
+</div>
+<!--End sc3-->
+
+
+<!--Begin sc4-->
+<div class="tabcontent" id="sc4" style="display: block;">
+<div class="textcontent">
+<h3>FILES</h3>
+
+<div class="regularlist">
+<p><strong>Required Install Files</strong></p>
+<ul>
+  <li>includes/extra_datafiles/recent_products.php</li>
+  <li>includes/languages/english/extra_definitions_YOUR_TEMPLATE/recent_products.php</li>
+  <li>includes/modules/sideboxes/YOUR_TEMPLATE/recent_products.php</li>
+  <li>includes/templates/YOUR_TEMPLATE/sideboxes/tpl_recent_products.php</li>
+  <li>includes/templates/YOUR_TEMPLATE/templates/tpl_modules_recent_products.php</li>
+</ul>
+
+<p><strong>Optional Install Files</strong>
+<ul>
+  <li>/includes/templates/YOUR_TEMPLATE/tpl_product_info_display.php</li>
+</ul>
+
+</div>
+
+</div>
+</div>
+<!--End sc4-->
+
+
+<!--Begin sc5-->
+<div class="tabcontent" id="sc5" style="display: block;">
+<div class="textcontent">
+<h3>CREDITS &amp; HISTORY</h3>
+Credit for original contribution goes to Absolute Solutions<br><br>
+
+<h3>Acknowledgements</h3>
+<div class="regularlist">
+<ul>
+	<li>All thanks go to nigelt74 for contributing the technical aspects of the update & resolving multiple issues in V2.</li>
+	<li>Special thanks to gjh42 & DivaVocals for helping as well.</li>
+</ul>
+
+<h3>Change Log</h3>
+
+<div class="regularlist">
+2.3 - 02/17/2015 - jeking<br>
+<ul>
+	<li>updated for Zen Cart 1.5.3 and 1.5.4</li>
+	<li>rewrite of ReadMe</li>
+</ul>
+2.2 - harolds<br>
+<ul>
+	<li>fixed the queries so that they include the selected language (otherwise you would see the product in every
+	activated language)</li>
+	<li>added the maximum number of items on product page</li>
+	<li>added CSS classes to the images (so you can easily style them as you see fit)</li>
+	<li>made the SQL a bit easier to import (no configuration_id anymore, it will be autofilled)</li>
+</ul>
+2.0 - nigelt74 &amp;  ScriptJunkie <br>
+<ul>
+	<li>Updated for Zen Cart v1.5.0</li>
+	<li>Added tpl_product_info_display.php because it was missing from previous version.</li>
+	<li>Fixed Centerbox issue (centerbox would not display) by adding includes/extra_datafile/recent_products.php & fixing dozens of syntax errors in modules/recent_products.php</li>
+	<li>Cleaned up the folder/file structure in the download package to bring it up to date with current standards.</li>
+	<li>Clarified the installation instructions. </li>
+	<li>Cleaned up the readme file and brought it up to date.</li>
+</ul>
+
+1.1 - MotoCC<br>
+<ul>
+	<li>added centerbox functionality</li>
+</ul>
+
+1.0 - Mukesh Waghmare<br>
+<ul>
+	<li>Updated for Zen Cart v1.3.8</li>
+</ul>
+
+1.0 - Absolute Solutions<br>
+<ul>
+	<li>initial release</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+<!--End sc5-->
+
+
+<!--Begin sc6-->
+<div class="tabcontent" id="sc6" style="display: block;">
+<div class="textcontent">
+
+<h3>LICENSE</h3>
+<p>hideCategories 2.0 is released under the General Public License (see <a href="LICENSE.txt">LICENSE.txt)</a></p>
+
+<p>This script is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p>
+<p>Always backup your shop and database before making changes.</p>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</div>
+</div>
+<!--End sc6-->
+
+
+</div>
+<!--end tabcontainer-->
+<script type="text/javascript">document.getElementById('sc2').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc3').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc4').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc5').style.display = 'none';</script>
+<script type="text/javascript">document.getElementById('sc6').style.display = 'none';</script>
+<script type="text/javascript">ShowTabs()</script>
+<script type="text/javascript">
+// We only show the tab links if JavaScript is available/active.
+<!--
+if (document.getElementById("slidetabsmenu") != null) {
+  document.getElementById('slidetabsmenu').style.display = "block";
+}
+//-->
+</script><br>
+<br>
+<p><a href="http://validator.w3.org/check/referer" target="_blank"><img src="http://www.w3.org/Icons/valid-html401-blue.gif" alt="W3C validation logo" border="0" height="31" width="88"></a> <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" border="0" height="31" width="88"></a></p>
+<br>
+<br>
+</div>
+
+</body></html>
